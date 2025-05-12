@@ -1,0 +1,92 @@
+.main {
+  /* border: 1px solid green;*/
+  max-width: 984px;
+  margin: 92px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__title {
+  max-width: 830px;
+  font-family: "Inter-Black";
+  font-size: 54px;
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
+
+.main__paragraph {
+  /*max-width: 830px;*/
+  font-family: "Inter-Regular";
+  font-size: 1.5rem;
+  line-height: 1.4;
+  max-width: 738px;
+}
+
+.main__paragraph_quote {
+  text-align: left;
+  font-family: "Inter-Regular";
+  /*font-size: 24px;
+  line-height: 34px;*/
+}
+
+.main__paragraph_author {
+  font-family: "Inter-Regular";
+  /*font-size: 24px;
+  line-height: 34px;*/
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 32px;
+  position: relative;
+  right: 6px;
+}
+
+.main__paragraph_content {
+  max-width: 722px;
+  font-family: "Inter-Regular";
+  font-size: 1rem;
+  line-height: 163%;
+}
+
+@media screen and (min-width: 545px) and (max-width: 1024px) {
+  .main {
+    max-width: 720px;
+    margin: 90px 24px 64px;
+  }
+
+  .main__title {
+    max-width: 707px;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+  }
+
+  .main__paragraph_author {
+    margin-top: 0px;
+    position: relative;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 544px) {
+  .main {
+    max-width: 288px;
+    margin: 64px 16px;
+  }
+
+  .main__title {
+    max-width: 288px;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .main__paragraph {
+    line-height: 1.2;
+  }
+  .main__paragraph_author {
+    margin-top: 10px;
+    position: relative;
+    right: 0;
+  }
+  .main__paragraph_content {
+    line-height: 163%;
+  }
+}
