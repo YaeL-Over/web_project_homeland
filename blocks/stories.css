@@ -1,0 +1,172 @@
+.stories {
+  max-width: 987px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin: 0 auto 90px;
+  /* border: 1px solid green;*/
+}
+
+.stories__content {
+  max-width: 987px;
+  display: grid;
+  grid-template-columns: 460px 484px;
+  grid-template-rows: 152px 1fr 48px;
+  grid-gap: 48px 40px;
+}
+
+.stories__header {
+  max-width: 460px;
+  font-family: "Inter-Black";
+  font-size: 4.5rem;
+  line-height: 1;
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+}
+
+.stories__img {
+  width: 100%;
+  /*height: 100%;*/
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0;
+}
+
+.stories__img:hover {
+  filter: brightness(0.5);
+}
+
+.stories__button {
+  width: 289px;
+  /*height: 48px;*/
+  padding: 12px;
+  grid-column: 1;
+  grid-row: 3;
+  margin: 0;
+  box-shadow: 5px 5px 10px #000;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: auto;
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+}
+
+.stories__button:hover {
+  filter: brightness(0.25);
+}
+
+.stories__artist {
+  grid-column: 2;
+  grid-row: 1;
+  margin-bottom: 0;
+  padding-top: 90px;
+}
+
+.stories__artist_header {
+  font-size: 12px;
+  letter-spacing: 12%;
+  color: #aaa;
+  margin-bottom: 8px;
+  line-height: 100%;
+}
+
+.stories__artist_name {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.stories__paragraph {
+  margin: 0;
+}
+.stories__subparagraph {
+  font-size: 18px;
+  line-height: 163%;
+  margin: 12.5px auto;
+}
+
+@media screen and (min-width: 545px) and (max-width: 1024px) {
+  .stories {
+    max-width: 720px;
+    margin: 0 auto 90px;
+  }
+  .stories__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 68px 1fr 48px;
+    grid-gap: 48px 28px;
+    margin: 0;
+  }
+
+  .stories__header {
+    max-width: 340px;
+    font-family: "Inter-Black";
+    font-size: 2.6rem;
+    line-height: 1.1;
+    padding-top: 20px;
+  }
+  .stories__artist {
+    margin: 0;
+    padding-top: 0;
+  }
+  .stories__subparagraph {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 544px) {
+  .stories {
+    max-width: 320px;
+    margin: 0 auto 65px;
+  }
+
+  .stories__content {
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: 35px 89px 320px 1fr 48px;
+    grid-gap: auto 30px;
+    margin: 0;
+  }
+  .stories__header {
+    max-width: 288px;
+    font-family: "Inter-Black";
+    font-size: 2rem;
+    line-height: 1.1;
+    padding: 0;
+  }
+
+  .stories__artist {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0;
+    padding: 0;
+  }
+  .stories__img {
+    grid-column: 1;
+    grid-row: 3;
+    margin: 0;
+    height: 100%;
+  }
+
+  .stories__paragraph {
+    grid-column: 1;
+    grid-row: 4;
+    margin: 0;
+  }
+  .stories__subparagraph {
+    font-size: 16px;
+    margin: 12.5px 16px;
+  }
+  .stories__button {
+    max-width: 288px;
+    /*height: 48px;*/
+    padding: 12px 0;
+    grid-column: 1;
+    grid-row: 5;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+}
